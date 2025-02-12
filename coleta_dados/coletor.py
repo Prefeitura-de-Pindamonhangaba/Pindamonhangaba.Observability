@@ -6,5 +6,4 @@ class ColetorDeDados:
     
     def coletar(self):
         facilitaSP = FacilitaSP()
-        facilitaSP.ListaIncricoes()
-        pass
+        return facilitaSP.Coleta()
