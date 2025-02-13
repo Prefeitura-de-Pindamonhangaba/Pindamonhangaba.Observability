@@ -15,8 +15,8 @@ class FacilitaSP:
         url = f'{os.getenv("URL_REDESIM")}/token-autenticacao'
         body = {
             "autenticacao": {
-                "userName": f"{os.getenv("USUARIO_REDESIM")}",
-                "password": f"{os.getenv("SENHA_REDESIM")}",
+                "userName": f'{os.getenv("USUARIO_REDESIM")}',
+                "password": f'{os.getenv("SENHA_REDESIM")}',
                 "refreshToken": "string",
                 "grantType": "webadmin-credential"
             }
