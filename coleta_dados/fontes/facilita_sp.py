@@ -60,6 +60,7 @@ class FacilitaSP:
 
     def Coleta(self):
         data = {
+            "tipo": "FACILITA_SP",
             "status_code": None,
             "headers": None,
             "content": None,
