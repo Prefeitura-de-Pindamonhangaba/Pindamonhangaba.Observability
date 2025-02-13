@@ -1,6 +1,7 @@
 test:
   script:
     - echo "Testando o Runner..."
+    - ls -la
 
 deploy_dev:
   script:
