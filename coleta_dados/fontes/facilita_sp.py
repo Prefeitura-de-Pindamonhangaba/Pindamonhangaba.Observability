@@ -12,7 +12,7 @@ class FacilitaSP:
     def TokenAutenticacao(self):
         
         token = 0
-        url = f"{os.getenv("URL_REDESIM")}/token-autenticacao"
+        url = f'{os.getenv("URL_REDESIM")}/token-autenticacao'
         body = {
             "autenticacao": {
                 "userName": f"{os.getenv("USUARIO_REDESIM")}",
