@@ -4,14 +4,13 @@ test:
 
 deploy_dev:
   script:
-    - mkdir /var/www/gitlab
-    - git clone https://gitlab.com/setip-dsi/Pindamonhangaba.Observability.git 
     - cd /var/www/gitlab/Pindamonhangaba.Observability
+    - git pull https://almoreira:glpat-G4ppSEYRAkPD4zQ7j4GE@gitlab.com/setip-dsi/Pindamonhangaba.Observability.git
     - cat > .env << EOF
       USUARIO_REDESIM=$USUARIO_REDESIM
       SENHA_REDESIM=$SENHA_REDESIM
       URL_REDESIM=$URL_REDESIM
       CAMINHO_LOG_FACILITA=$CAMINHO_LOG_FACILITA
-      EOF
+EOF
     - pip install -r requirements.txt
-    - python main.py
+    - python3 main.py
